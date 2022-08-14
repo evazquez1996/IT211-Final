@@ -1,6 +1,7 @@
 import java.util.Objects;
 
 public class FoodItem {
+    // Teddy helped create the fields
     private String foodName;
     private double fat;
     private double carbohydrates;
@@ -8,6 +9,8 @@ public class FoodItem {
     private double numServings;
     private double numServings2;
 
+
+    // Edlawit helped create the setters and getters
     public void setFoodName(String foodName){
         this.foodName = foodName;
     }
@@ -62,7 +65,7 @@ public class FoodItem {
     public double getCalorieServing() {
         return (float) ((fat * 9) + (carbohydrates * 4) + (protein * 4)) * numServings;
     }
-
+    // Eduardo created the nutritional info conditional statement
     public void printNutritionalInfo() {
         if (Objects.equals(foodName, "Water")) {
             double water = 0.0;
